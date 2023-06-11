@@ -15,12 +15,12 @@ public class Student {
      * plus a single Program.
      */
 
-    private int studentNumber;
-    private int studentAge;
-    private String studentFirstName;
-    private String studentLastName;
-    private ArrayList<Course> studentCourses;
-    private Program studentProgram;
+    private int cbStudentNumber;
+    private int cbStudentAge;
+    private String cbStudentFirstName;
+    private String cbStudentLastName;
+    private ArrayList<Course> cbStudentCourses;
+    private Program cbStudentProgram;
 
     /**
      * Default constructor. Accepts all args.
@@ -28,20 +28,20 @@ public class Student {
      * Used when a student is enrolled in a program
      * but may be out of stream and have different courses.
      *
-     * @param studentNumber
-     * @param studentAge
-     * @param studentFirstName
-     * @param studentLastName
-     * @param studentCourses
-     * @param studentProgram
+     * @param cbStudentNumber
+     * @param cbStudentAge
+     * @param cbStudentFirstName
+     * @param cbStudentLastName
+     * @param cbStudentCourses
+     * @param cbStudentProgram
      */
-    public Student(int studentNumber, int studentAge, String studentFirstName, String studentLastName, ArrayList<Course> studentCourses, Program studentProgram) {
-        setStudentNumber(studentNumber);
-        setStudentAge(studentAge);
-        setStudentFirstName(studentFirstName);
-        setStudentLastName(studentLastName);
-        setStudentCourses(studentCourses);
-        setStudentProgram(studentProgram);
+    public Student(int cbStudentNumber, int cbStudentAge, String cbStudentFirstName, String cbStudentLastName, ArrayList<Course> cbStudentCourses, Program cbStudentProgram) {
+        setCbStudentNumber(cbStudentNumber);
+        setCbStudentAge(cbStudentAge);
+        setCbStudentFirstName(cbStudentFirstName);
+        setCbStudentLastName(cbStudentLastName);
+        setCbStudentCourses(cbStudentCourses);
+        setCbStudentProgram(cbStudentProgram);
     }
 
     /**
@@ -52,19 +52,19 @@ public class Student {
      *
      * Used when a student is enrolled in a program,
      * and is in stream with all program courses.
-     * @param studentNumber
-     * @param studentAge
-     * @param studentFirstName
-     * @param studentLastName
-     * @param studentProgram
+     * @param cbStudentNumber
+     * @param cbStudentAge
+     * @param cbStudentFirstName
+     * @param cbStudentLastName
+     * @param cbStudentProgram
      */
-    public Student(int studentNumber, int studentAge, String studentFirstName, String studentLastName, Program studentProgram) {
-        setStudentNumber(studentNumber);
-        setStudentAge(studentAge);
-        setStudentFirstName(studentFirstName);
-        setStudentLastName(studentLastName);
-        setStudentProgram(studentProgram);
-        setStudentCourses(studentProgram.getProgramCourses());
+    public Student(int cbStudentNumber, int cbStudentAge, String cbStudentFirstName, String cbStudentLastName, Program cbStudentProgram) {
+        setCbStudentNumber(cbStudentNumber);
+        setCbStudentAge(cbStudentAge);
+        setCbStudentFirstName(cbStudentFirstName);
+        setCbStudentLastName(cbStudentLastName);
+        setCbStudentProgram(cbStudentProgram);
+        setCbStudentCourses(cbStudentProgram.getCbProgramCourses());
     }
 
     /**
@@ -72,16 +72,16 @@ public class Student {
      *
      * No program or course related args. Allows creation of a student without
      * associated program or course.
-     * @param studentNumber
-     * @param studentAge
-     * @param studentFirstName
-     * @param studentLastName
+     * @param cbStudentNumber
+     * @param cbStudentAge
+     * @param cbStudentFirstName
+     * @param cbStudentLastName
      */
-    public Student(int studentNumber, int studentAge, String studentFirstName, String studentLastName) {
-        setStudentNumber(studentNumber);
-        setStudentAge(studentAge);
-        setStudentFirstName(studentFirstName);
-        setStudentLastName(studentLastName);
+    public Student(int cbStudentNumber, int cbStudentAge, String cbStudentFirstName, String cbStudentLastName) {
+        setCbStudentNumber(cbStudentNumber);
+        setCbStudentAge(cbStudentAge);
+        setCbStudentFirstName(cbStudentFirstName);
+        setCbStudentLastName(cbStudentLastName);
     }
 
     /**
@@ -91,69 +91,69 @@ public class Student {
      *
      * Used when a student is enrolled in courses,
      * but is not in a particular program.
-     * @param studentNumber
-     * @param studentAge
-     * @param studentFirstName
-     * @param studentLastName
-     * @param studentCourses
+     * @param cbStudentNumber
+     * @param cbStudentAge
+     * @param cbStudentFirstName
+     * @param cbStudentLastName
+     * @param cbStudentCourses
      */
-    public Student(int studentNumber, int studentAge, String studentFirstName, String studentLastName, ArrayList<Course> studentCourses) {
-        setStudentNumber(studentNumber);
-        setStudentAge(studentAge);
-        setStudentFirstName(studentFirstName);
-        setStudentLastName(studentLastName);
-        setStudentCourses(studentCourses);
+    public Student(int cbStudentNumber, int cbStudentAge, String cbStudentFirstName, String cbStudentLastName, ArrayList<Course> cbStudentCourses) {
+        setCbStudentNumber(cbStudentNumber);
+        setCbStudentAge(cbStudentAge);
+        setCbStudentFirstName(cbStudentFirstName);
+        setCbStudentLastName(cbStudentLastName);
+        setCbStudentCourses(cbStudentCourses);
     }
 
     /**
      * Getters / Setters
      */
 
-    public int getStudentNumber() {
-        return studentNumber;
+    public int getCbStudentNumber() {
+        return cbStudentNumber;
     }
 
-    public void setStudentNumber(int studentNumber) {
-        this.studentNumber = studentNumber;
+    public void setCbStudentNumber(int cbStudentNumber) {
+        this.cbStudentNumber = cbStudentNumber;
     }
 
-    public int getStudentAge() {
-        return studentAge;
+    public int getCbStudentAge() {
+        return cbStudentAge;
     }
 
-    public void setStudentAge(int studentAge) {
-        this.studentAge = studentAge;
+    public void setCbStudentAge(int cbStudentAge) {
+        this.cbStudentAge = cbStudentAge;
     }
 
-    public String getStudentFirstName() {
-        return studentFirstName;
+    public String getCbStudentFirstName() {
+        return cbStudentFirstName;
     }
 
-    public void setStudentFirstName(String studentFirstName) {
-        this.studentFirstName = studentFirstName;
+    public void setCbStudentFirstName(String cbStudentFirstName) {
+        this.cbStudentFirstName = cbStudentFirstName;
     }
 
-    public String getStudentLastName() {
-        return studentLastName;
+    public String getCbStudentLastName() {
+        return cbStudentLastName;
     }
 
-    public void setStudentLastName(String studentLastName) {
-        this.studentLastName = studentLastName;
+    public void setCbStudentLastName(String cbStudentLastName) {
+        this.cbStudentLastName = cbStudentLastName;
     }
 
-    public ArrayList<Course> getStudentCourses() {
-        return studentCourses;
+    public ArrayList<Course> getCbStudentCourses() {
+        return cbStudentCourses;
     }
 
-    public void setStudentCourses(ArrayList<Course> studentCourses) {
-        this.studentCourses = studentCourses;
+    public void setCbStudentCourses(ArrayList<Course> cbStudentCourses) {
+        this.cbStudentCourses = cbStudentCourses;
     }
 
-    public Program getStudentProgram() {
-        return studentProgram;
+    public Program getCbStudentProgram() {
+        return cbStudentProgram;
     }
 
-    public void setStudentProgram(Program studentProgram) {
-        this.studentProgram = studentProgram;
+    public void setCbStudentProgram(Program cbStudentProgram) {
+        this.cbStudentProgram = cbStudentProgram;
     }
 }

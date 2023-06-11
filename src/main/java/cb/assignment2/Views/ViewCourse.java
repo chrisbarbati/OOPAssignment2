@@ -11,9 +11,9 @@ import cb.assignment2.Models.Course;
 public class ViewCourse {
     public static void printCourse(Course course){
         System.out.println("Course Information: ");
-        System.out.println("Course Name: " + course.getCourseName());
-        System.out.println("Instructor: " + course.getCourseInstructor());
-        System.out.println("Location: " + course.getCourseLocation());
-        System.out.println("CRN: " + course.getCrn());
+        System.out.println("Course Name: " + course.getCbCourseName());
+        System.out.println("Instructor: " + course.getCbCourseInstructor());
+        System.out.println("Location: " + course.getCbCourseLocation());
+        System.out.println("CRN: " + course.getCbCrn());
     }
 }

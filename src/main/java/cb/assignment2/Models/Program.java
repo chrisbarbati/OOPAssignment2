@@ -15,55 +15,55 @@ public class Program {
      * ArrayList to hold Course objects.
      */
 
-    private int programYears;
-    private boolean programCoop;
-    private String programName;
-    private ArrayList<Course> programCourses;
+    private int cbProgramYears;
+    private boolean cbProgramCoop;
+    private String cbProgramName;
+    private ArrayList<Course> cbProgramCourses;
 
     /**
      * Default constructor
      */
 
-    public Program(int programYears, boolean programCoop, String programName, ArrayList<Course> programCourses) {
-        setProgramYears(programYears);
-        setProgramCoop(programCoop);
-        setProgramName(programName);
-        setProgramCourses(programCourses);
+    public Program(int cbProgramYears, boolean cbProgramCoop, String cbProgramName, ArrayList<Course> cbProgramCourses) {
+        setCbProgramYears(cbProgramYears);
+        setCbProgramCoop(cbProgramCoop);
+        setCbProgramName(cbProgramName);
+        setCbProgramCourses(cbProgramCourses);
     }
 
     /**
      * Getters / Setters
      */
 
-    public int getProgramYears() {
-        return programYears;
+    public int getCbProgramYears() {
+        return cbProgramYears;
     }
 
-    public void setProgramYears(int programYears) {
-        this.programYears = programYears;
+    public void setCbProgramYears(int cbProgramYears) {
+        this.cbProgramYears = cbProgramYears;
     }
 
-    public boolean isProgramCoop() {
-        return programCoop;
+    public boolean isCbProgramCoop() {
+        return cbProgramCoop;
     }
 
-    public void setProgramCoop(boolean programCoop) {
-        this.programCoop = programCoop;
+    public void setCbProgramCoop(boolean cbProgramCoop) {
+        this.cbProgramCoop = cbProgramCoop;
     }
 
-    public String getProgramName() {
-        return programName;
+    public String getCbProgramName() {
+        return cbProgramName;
     }
 
-    public void setProgramName(String programName) {
-        this.programName = programName;
+    public void setCbProgramName(String cbProgramName) {
+        this.cbProgramName = cbProgramName;
     }
 
-    public ArrayList<Course> getProgramCourses() {
-        return programCourses;
+    public ArrayList<Course> getCbProgramCourses() {
+        return cbProgramCourses;
     }
 
-    public void setProgramCourses(ArrayList<Course> programCourses) {
-        this.programCourses = programCourses;
+    public void setCbProgramCourses(ArrayList<Course> cbProgramCourses) {
+        this.cbProgramCourses = cbProgramCourses;
     }
 }

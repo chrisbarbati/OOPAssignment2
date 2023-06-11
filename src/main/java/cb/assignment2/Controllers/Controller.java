@@ -23,35 +23,35 @@ public class Controller {
      * Using one controller for all views, as we discussed in class.
      */
 
-    private Student student;
-    private Course course;
-    private Program program;
+    private Student cbStudent;
+    private Course cbCourse;
+    private Program cbProgram;
 
-    private ViewStudent viewStudent;
-    private ViewCourse viewCourse;
-    private ViewProgram viewProgram;
+    private ViewStudent cbViewStudent;
+    private ViewCourse cbViewCourse;
+    private ViewProgram cbViewProgram;
 
     /**
      * Default constructor. Accepts one of each model, one of each view.
-     * @param student
-     * @param course
-     * @param program
-     * @param viewStudent
-     * @param viewCourse
-     * @param viewProgram
+     * @param cbStudent
+     * @param cbCourse
+     * @param cbProgram
+     * @param cbViewStudent
+     * @param cbViewCourse
+     * @param cbViewProgram
      */
-    public Controller(Student student,
-                      Course course,
-                      Program program,
-                      ViewStudent viewStudent,
-                      ViewCourse viewCourse,
-                      ViewProgram viewProgram) {
-        this.student = student;
-        this.course = course;
-        this.program = program;
-        this.viewStudent = viewStudent;
-        this.viewCourse = viewCourse;
-        this.viewProgram = viewProgram;
+    public Controller(Student cbStudent,
+                      Course cbCourse,
+                      Program cbProgram,
+                      ViewStudent cbViewStudent,
+                      ViewCourse cbViewCourse,
+                      ViewProgram cbViewProgram) {
+        this.cbStudent = cbStudent;
+        this.cbCourse = cbCourse;
+        this.cbProgram = cbProgram;
+        this.cbViewStudent = cbViewStudent;
+        this.cbViewCourse = cbViewCourse;
+        this.cbViewProgram = cbViewProgram;
     }
 
     /**
@@ -59,52 +59,52 @@ public class Controller {
      * @return
      */
 
-    public Student getStudent() {
-        return student;
+    public Student getCbStudent() {
+        return cbStudent;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public void setCbStudent(Student cbStudent) {
+        this.cbStudent = cbStudent;
     }
 
-    public Course getCourse() {
-        return course;
+    public Course getCbCourse() {
+        return cbCourse;
     }
 
-    public void setCourse(Course course) {
-        this.course = course;
+    public void setCbCourse(Course cbCourse) {
+        this.cbCourse = cbCourse;
     }
 
-    public Program getProgram() {
-        return program;
+    public Program getCbProgram() {
+        return cbProgram;
     }
 
-    public void setProgram(Program program) {
-        this.program = program;
+    public void setCbProgram(Program cbProgram) {
+        this.cbProgram = cbProgram;
     }
 
-    public ViewStudent getViewStudent() {
-        return viewStudent;
+    public ViewStudent getCbViewStudent() {
+        return cbViewStudent;
     }
 
-    public void setViewStudent(ViewStudent viewStudent) {
-        this.viewStudent = viewStudent;
+    public void setCbViewStudent(ViewStudent cbViewStudent) {
+        this.cbViewStudent = cbViewStudent;
     }
 
-    public ViewCourse getViewCourse() {
-        return viewCourse;
+    public ViewCourse getCbViewCourse() {
+        return cbViewCourse;
     }
 
-    public void setViewCourse(ViewCourse viewCourse) {
-        this.viewCourse = viewCourse;
+    public void setCbViewCourse(ViewCourse cbViewCourse) {
+        this.cbViewCourse = cbViewCourse;
     }
 
-    public ViewProgram getViewProgram() {
-        return viewProgram;
+    public ViewProgram getCbViewProgram() {
+        return cbViewProgram;
     }
 
-    public void setViewProgram(ViewProgram viewProgram) {
-        this.viewProgram = viewProgram;
+    public void setCbViewProgram(ViewProgram cbViewProgram) {
+        this.cbViewProgram = cbViewProgram;
     }
 
     /**
@@ -122,19 +122,19 @@ public class Controller {
      */
 
     public void setStudentProgram(Program program){
-        student.setStudentProgram(program); //You can see the redundancy I am referring to here
+        cbStudent.setCbStudentProgram(program); //You can see the redundancy I am referring to here
     }
 
     public void setStudentCourses(ArrayList<Course> courses){
-        student.setStudentCourses(courses);
+        cbStudent.setCbStudentCourses(courses);
     }
 
     public void setProgramCourses(ArrayList<Course> courses){
-        program.setProgramCourses(courses);
+        cbProgram.setCbProgramCourses(courses);
     }
 
     public void setCourseName(String name){
-        course.setCourseName(name);
+        cbCourse.setCbCourseName(name);
     }
 
     /**
@@ -142,15 +142,15 @@ public class Controller {
      */
 
     public void updateStudentView(){
-        ViewStudent.printStudent(student);
+        ViewStudent.printStudent(cbStudent);
     }
 
     public void updateCourseView(){
-        ViewCourse.printCourse(course);
+        ViewCourse.printCourse(cbCourse);
     }
 
     public void updateProgramView(){
-        ViewProgram.printProgram(program);
+        ViewProgram.printProgram(cbProgram);
     }
 
 

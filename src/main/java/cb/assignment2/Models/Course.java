@@ -10,10 +10,10 @@ public class Course {
     /**
      * Instance variables
      */
-    private int crn;
-    private String courseName;
-    private String courseInstructor;
-    private String courseLocation;
+    private int cbCrn;
+    private String cbCourseName;
+    private String cbCourseInstructor;
+    private String cbCourseLocation;
 
     /**
      * Default constructor.
@@ -22,52 +22,52 @@ public class Course {
      * That is beyond the scope of my assignment, but would be a better
      * solution than a String containing the name of the instructor.
      *
-     * @param courseLocation
-     * @param courseName
-     * @param courseInstructor
-     * @param crn
+     * @param cbCourseLocation
+     * @param cbCourseName
+     * @param cbCourseInstructor
+     * @param cbCrn
      */
 
-    public Course(int crn, String courseName, String courseInstructor, String courseLocation) {
-        setCrn(crn);
-        setCourseName(courseName);
-        setCourseLocation(courseLocation);
-        setCourseInstructor(courseInstructor);
+    public Course(int cbCrn, String cbCourseName, String cbCourseInstructor, String cbCourseLocation) {
+        setCbCrn(cbCrn);
+        setCbCourseName(cbCourseName);
+        setCbCourseLocation(cbCourseLocation);
+        setCbCourseInstructor(cbCourseInstructor);
     }
 
     /**
      * Getters / Setters
      */
 
-    public int getCrn() {
-        return crn;
+    public int getCbCrn() {
+        return cbCrn;
     }
 
-    public void setCrn(int crn) {
-        this.crn = crn;
+    public void setCbCrn(int cbCrn) {
+        this.cbCrn = cbCrn;
     }
 
-    public String getCourseName() {
-        return courseName;
+    public String getCbCourseName() {
+        return cbCourseName;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
+    public void setCbCourseName(String cbCourseName) {
+        this.cbCourseName = cbCourseName;
     }
 
-    public String getCourseInstructor() {
-        return courseInstructor;
+    public String getCbCourseInstructor() {
+        return cbCourseInstructor;
     }
 
-    public void setCourseInstructor(String courseInstructor) {
-        this.courseInstructor = courseInstructor;
+    public void setCbCourseInstructor(String cbCourseInstructor) {
+        this.cbCourseInstructor = cbCourseInstructor;
     }
 
-    public String getCourseLocation() {
-        return courseLocation;
+    public String getCbCourseLocation() {
+        return cbCourseLocation;
     }
 
-    public void setCourseLocation(String courseLocation) {
-        this.courseLocation = courseLocation;
+    public void setCbCourseLocation(String cbCourseLocation) {
+        this.cbCourseLocation = cbCourseLocation;
     }
 }
